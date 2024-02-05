@@ -1,8 +1,8 @@
 #!/usr/bin/python
 
-deposit = 100 #how much money you start with
+deposit = 100 #initial starting value 
 
-apy = 5 / 100 #5.00 percent annual percentage yield
+apy = 5 / 100 #5.00 convert percent annual percentage yield into a decimal
 
 years = 5 #over 5 year time frame
 
