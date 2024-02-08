@@ -1,20 +1,16 @@
 #!/usr/bin/python
 
-deposit = 100 #initial starting value 
+deposit = 100 
+apy = 5 / 100
+years = 10
 
-apy = 5 / 100 #5.00 convert percent annual percentage yield into a decimal
-
-years = 5 #over 5 year time frame
-
+# Calculate the interest and earnings after one year
 interest = deposit * apy
-print("Interest:", interest)
-
 earnings = interest + deposit
 
-compound_interest = earnings * apy
-print("Interest made after one year:", compound_interest)
+# Calculate compound interest for the given number of years
+compound_interest = deposit * ((1 + apy) ** years) - deposit
 
-compound_interest_final = compound_interest * years
-print("Compound interest made after 5 years:", compound_interest_final + deposit)
-
-
+print("Interest:", interest)
+print("Earnings after one year:", earnings)
+print("Compound interest earnings after", years, "years:", compound_interest + deposit)
